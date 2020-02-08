@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<head>
+    <title>Shiv's Blog</title>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>
+        <a href="{%url 'home' %}">Shiv's Blog</a>
+    </h1>
+</header>
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>
